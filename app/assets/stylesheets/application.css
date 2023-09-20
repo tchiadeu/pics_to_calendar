@@ -15,3 +15,34 @@
  */
 
  @import "reset.css";
+
+ @media (min-width: 576px) {
+  .smartphone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .smartphone {
+    width: 375px;
+    height: 812px;
+    border-radius: 35px;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+  }
+
+  .smartphone-content {
+    padding: 20px;
+  }
+
+  .smartphone-image {
+    position: absolute;
+    height: 879px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

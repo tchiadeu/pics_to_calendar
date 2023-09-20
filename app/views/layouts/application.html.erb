@@ -12,8 +12,15 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
-    </main>
+    <div class="smartphone-container">
+      <%= image_tag "iphone.png", alt: "iphone_background", class: "smartphone-image" %>
+      <div class="smartphone">
+        <div class="smartphone-content">
+          <main class="container mx-auto mt-28 px-5 flex">
+            <%= yield %>
+          </main>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
