@@ -4,5 +4,5 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  validates :email, presence: true, inclusion: { in: ['kevintchiadeu@gmail.com'] }
+  validates :email, presence: true, inclusion: { in: ['kevin.tchiadeu@gmail.com'] }
 end
